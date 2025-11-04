@@ -1,0 +1,42 @@
+oct 29, 2025 4:15:17 P. M. com.happyfeet.util.LogConfig configure
+INFORMACIÓN: Sistema de logging configurado correctamente
+oct 29, 2025 4:15:17 P. M. com.happyfeet.Main main
+INFORMACIÓN: Iniciando Sistema de Gestión Veterinaria Happy Feet
+oct 29, 2025 4:15:18 P. M. jdk.internal.event.EventHelper logX509CertificateEvent
+DETALLADO: X509Certificate: Alg:SHA256withRSA, Serial:02, Subject:CN=MySQL_Server_8.0.43_Auto_Generated_Server_Certificate, Issuer:CN=MySQL_Server_8.0.43_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:2774428892, Valid from:15/08/25, 2:41 p. m., Valid until:13/08/35, 2:41 p. m.
+oct 29, 2025 4:15:18 P. M. jdk.internal.event.EventHelper logX509CertificateEvent
+DETALLADO: X509Certificate: Alg:SHA256withRSA, Serial:01, Subject:CN=MySQL_Server_8.0.43_Auto_Generated_CA_Certificate, Issuer:CN=MySQL_Server_8.0.43_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:3126197952, Valid from:15/08/25, 2:41 p. m., Valid until:13/08/35, 2:41 p. m.
+oct 29, 2025 4:15:18 P. M. jdk.internal.event.EventHelper logTLSHandshakeEvent
+DETALLADO:  TLSHandshake: localhost:3306, TLSv1.3, TLS_AES_256_GCM_SHA384, 2774428892
+oct 29, 2025 4:15:19 P. M. com.happyfeet.util.DatabaseConnection <init>
+INFORMACIÓN: Conexión a BD establecida exitosamente
+oct 29, 2025 4:16:51 P. M. com.happyfeet.dao.BaseDAO insert
+INFORMACIÓN: Entidad creada: Dueño[id=1, nombre=jeferson arley estupinan carrascal, documento=1093743496, email=jefersoncarrascal@outlook.com]
+oct 29, 2025 4:21:38 P. M. com.happyfeet.dao.BaseDAO insert
+INFORMACIÓN: Entidad creada: Dueño[id=2, nombre=kevin santiago maestre castillejo, documento=1091974282, email=kevinmaestre@outlook.com]
+oct 30, 2025 3:07:11 P. M. com.happyfeet.util.LogConfig configure
+INFORMACIÓN: Sistema de logging configurado correctamente
+oct 30, 2025 3:07:11 P. M. com.happyfeet.Main main
+INFORMACIÓN: Iniciando Sistema de Gestión Veterinaria Happy Feet
+oct 30, 2025 3:07:12 P. M. jdk.internal.event.EventHelper logX509CertificateEvent
+DETALLADO: X509Certificate: Alg:SHA256withRSA, Serial:02, Subject:CN=MySQL_Server_8.0.43_Auto_Generated_Server_Certificate, Issuer:CN=MySQL_Server_8.0.43_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:2774428892, Valid from:15/08/25, 2:41 p. m., Valid until:13/08/35, 2:41 p. m.
+oct 30, 2025 3:07:12 P. M. jdk.internal.event.EventHelper logX509CertificateEvent
+DETALLADO: X509Certificate: Alg:SHA256withRSA, Serial:01, Subject:CN=MySQL_Server_8.0.43_Auto_Generated_CA_Certificate, Issuer:CN=MySQL_Server_8.0.43_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:3126197952, Valid from:15/08/25, 2:41 p. m., Valid until:13/08/35, 2:41 p. m.
+oct 30, 2025 3:07:12 P. M. jdk.internal.event.EventHelper logTLSHandshakeEvent
+DETALLADO:  TLSHandshake: localhost:3306, TLSv1.3, TLS_AES_256_GCM_SHA384, 2774428892
+oct 30, 2025 3:07:12 P. M. com.happyfeet.util.DatabaseConnection <init>
+INFORMACIÓN: Conexión a BD establecida exitosamente
+oct 31, 2025 4:21:37 P. M. com.happyfeet.util.LogConfig configure
+INFORMACIÓN: Sistema de logging configurado correctamente
+oct 31, 2025 4:21:37 P. M. com.happyfeet.Main main
+INFORMACIÓN: Iniciando Sistema de Gestión Veterinaria Happy Feet
+oct 31, 2025 4:21:38 P. M. jdk.internal.event.EventHelper logX509CertificateEvent
+DETALLADO: X509Certificate: Alg:SHA256withRSA, Serial:02, Subject:CN=MySQL_Server_8.0.43_Auto_Generated_Server_Certificate, Issuer:CN=MySQL_Server_8.0.43_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:2774428892, Valid from:15/08/25, 2:41 p. m., Valid until:13/08/35, 2:41 p. m.
+oct 31, 2025 4:21:38 P. M. jdk.internal.event.EventHelper logX509CertificateEvent
+DETALLADO: X509Certificate: Alg:SHA256withRSA, Serial:01, Subject:CN=MySQL_Server_8.0.43_Auto_Generated_CA_Certificate, Issuer:CN=MySQL_Server_8.0.43_Auto_Generated_CA_Certificate, Key type:RSA, Length:2048, Cert Id:3126197952, Valid from:15/08/25, 2:41 p. m., Valid until:13/08/35, 2:41 p. m.
+oct 31, 2025 4:21:38 P. M. jdk.internal.event.EventHelper logTLSHandshakeEvent
+DETALLADO:  TLSHandshake: localhost:3306, TLSv1.3, TLS_AES_256_GCM_SHA384, 2774428892
+oct 31, 2025 4:21:38 P. M. com.happyfeet.util.DatabaseConnection <init>
+INFORMACIÓN: Conexión a BD establecida exitosamente
+oct 31, 2025 4:22:01 P. M. com.happyfeet.dao.BaseDAO findAll
+GRAVE: Error al obtener todos los registros: Unknown column 'activo' in 'where clause'
