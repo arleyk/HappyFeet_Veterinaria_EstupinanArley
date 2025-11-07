@@ -163,7 +163,33 @@ public class FacturaDAO extends BaseDAO<Factura> {
         
         return items;
     }
+    
+    /**
+     * obtiene facturas por documento
+     */
 
+    public List<Factura> obtenerFacturasPorDocumento(String duenoDocumento) throws VeterinariaException {
+        List<Factura> facturas = new ArrayList<>();
+        String sql = "select * from facturas where dueno_id= (SELECT id from duenos where documento_identidad=?) ORDER BY fecha_emision DESC";
+        
+        try (PreparedStatement ps = connection.prepareStatement(sql)) {
+            ps.setString(1, duenoDocumento);
+            ResultSet rs = ps.executeQuery();
+            
+            while (rs.next()) {
+                facturas.add(mapResultSetToEntity(rs));
+            }
+            
+        } catch (SQLException e) {
+            logger.severe("Error al obtener facturas por dueño: " + e.getMessage());
+            throw new VeterinariaException("Error en operación de BD al obtener facturas por dueño", 
+                                         e, VeterinariaException.ErrorType.DATABASE_ERROR);
+        }
+        
+        return facturas;
+    }
+
+    
     /**
      * Obtiene facturas por dueño
      */

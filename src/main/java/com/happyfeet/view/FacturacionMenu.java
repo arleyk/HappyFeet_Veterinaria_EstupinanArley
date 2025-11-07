@@ -43,10 +43,21 @@ public class FacturacionMenu extends BaseMenu {
             case 3 -> generarFacturaTextoPlano();
             case 4 -> listarServiciosDisponibles();
             case 5 -> consultarFacturasPorDueno();
-            case 6 -> actualizarEstadoFactura();
-            case 7 -> crearNuevoServicio();
-            case 8 -> cerrarMenu();
+            case 6 -> consultarFacturasPorDocumento();
+            case 7 -> actualizarEstadoFactura();
+            case 8 -> crearNuevoServicio();
+            case 9 -> cerrarMenu();
             default -> System.out.println("❌ Opción no válida.");
+        }
+    }
+    
+    
+    // busca factura por documento
+    private void consultarFacturasPorDocumento(){
+        try{
+            facturacionController.mostrarMenuFacturacion();
+        } catch(Exception e){
+            System.err.println("❌ Error al generar factura: " + e.getMessage());
         }
     }
     

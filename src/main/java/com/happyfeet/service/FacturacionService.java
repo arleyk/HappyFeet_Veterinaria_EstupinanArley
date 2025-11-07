@@ -242,7 +242,13 @@ public class FacturacionService {
     public List<Factura> obtenerFacturasPorDueno(Integer duenoId) throws VeterinariaException {
         return facturaDAO.obtenerFacturasPorDueno(duenoId);
     }
-
+    /**
+     * obtiene facturas por documento
+     */
+        public List<Factura> obtenerFacturasPorDocumento(String duenoDocumento) throws VeterinariaException {
+        return facturaDAO.obtenerFacturasPorDocumento(duenoDocumento);
+    }
+    
     /**
      * Actualiza el estado de una factura
      */

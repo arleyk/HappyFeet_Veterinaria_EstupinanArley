@@ -169,6 +169,14 @@ Módulos Principales:
 
 * Gestión de pagos
 
+
+* añadida funcion para buscar facturas por documento de identidad del dueño:
+![alt text](image.png)
+*añadidos todas las funciones para que el codigo funcione de forma optima con esta nueva funcionalidad:
+![alt text](image-1.png)
+![alt text](image-2.png)
+![alt text](image-3.png)
+
 ## Reglas de Negocio Importantes:
 * Validación de disponibilidad de veterinarios para citas
 

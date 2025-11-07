@@ -35,9 +35,10 @@ public class FacturacionController {
             System.out.println("3. Generar factura en texto plano");
             System.out.println("4. Listar servicios disponibles");
             System.out.println("5. Consultar facturas por dueño");
-            System.out.println("6. Actualizar estado de factura");
-            System.out.println("7. Crear nuevo servicio");
-            System.out.println("8. Volver al menú principal");
+            System.out.println("6. Consultar facturas por documento");
+            System.out.println("7. Actualizar estado de factura");
+            System.out.println("8. Crear nuevo servicio");
+            System.out.println("9. Volver al menú principal");
             System.out.print("Seleccione una opción: ");
 
             int opcion = scanner.nextInt();
@@ -49,13 +50,42 @@ public class FacturacionController {
                 case 3 -> generarFacturaTextoPlano();
                 case 4 -> listarServiciosDisponibles();
                 case 5 -> consultarFacturasPorDueno();
-                case 6 -> actualizarEstadoFactura();
-                case 7 -> crearNuevoServicio();
-                case 8 -> { return; }
+                case 6 -> consultarFacturasPorDocumento();
+                case 7 -> actualizarEstadoFactura();
+                case 8 -> crearNuevoServicio();
+                case 9-> { return; }
                 default -> System.out.println("❌ Opción no válida.");
             }
         }
     }
+    
+    // filtra facturas por documento
+    private void consultarFacturasPorDocumento(){
+                try {
+            System.out.print("Ingrese el documento del dueño: ");
+            String duenoDocumento = scanner.nextLine();
+            scanner.nextLine();
+            
+            List<Factura> facturas = facturacionService.obtenerFacturasPorDocumento(duenoDocumento);
+            
+            if (facturas.isEmpty()) {
+                System.out.println("No se encontraron facturas para este dueño.");
+            } else {
+                System.out.println("\n=== FACTURAS DEL DUEÑO ===");
+                facturas.forEach(factura -> {
+                    System.out.printf("ID: %d | Factura: %s | Fecha: %s | Total: $%,.2f | Estado: %s\n",
+                        factura.getId(), factura.getNumeroFactura(), 
+                        factura.getFechaEmision().toLocalDate(), 
+                        factura.getTotal(), factura.getEstado());
+                });
+                System.out.println("Total: " + facturas.size() + " facturas encontradas");
+            }
+        } catch (Exception e) {
+            System.err.println("❌ Error al consultar facturas: " + e.getMessage());
+        }
+    }
+    
+    
     
     /**
      * Genera una nueva factura
@@ -278,4 +308,6 @@ public class FacturacionController {
             System.out.printf("Observaciones: %s\n", factura.getObservaciones());
         }
     }
+    
+    
 }
