@@ -106,7 +106,7 @@ El Sistema de Gestión Veterinaria "Happy Feet" es una aplicación desarrollada 
 
 
 ## Tecnologías Utilizadas
-Java 17 - Lenguaje de programación principal
+Java 25 - Lenguaje de programación principal
 
 MySQL 8.0 - Sistema de gestión de base de datos
 
@@ -341,8 +341,6 @@ Al ejecutar la aplicación, se presentará un menú principal con las siguientes
 
 ## Autor(es)
 Arley Estupiñán
-Laura Ardila 
-Kevin Maestre 
 
 GitHub: arleyk
 
